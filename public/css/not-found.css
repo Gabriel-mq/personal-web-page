@@ -1,8 +1,6 @@
 :root{
     --black-space:#141414;
     --soft-white:#dbdbdb;
-    --sun-yellow:#f9d81a;
-    --intense-black:#000000cc;
     --soft-black:#1820307a;
     --neon-lightblue:#83EEFF;
     font-size: 10px;
@@ -18,7 +16,6 @@
     border:none;
     outline:none;
     color:var(--soft-white);
-    scroll-behavior: smooth;
     box-sizing: border-box;
     user-select: none;
 }
