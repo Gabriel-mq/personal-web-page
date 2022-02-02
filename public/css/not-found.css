@@ -1,0 +1,176 @@
+:root{
+    --black-space:#141414;
+    --soft-white:#dbdbdb;
+    --sun-yellow:#f9d81a;
+    --intense-black:#000000cc;
+    --soft-black:#1820307a;
+    --neon-lightblue:#83EEFF;
+    font-size: 10px;
+}
+
+*:not(i),
+*::before:not(i),
+*::after:not(i){
+    font-family: "Gobold Regular";
+    font-weight: lighter;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    color:var(--soft-white);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: var(--black-space);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Loading */
+
+.load{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-space);
+    z-index:20;
+}
+
+.load__oval{
+    width: 15rem;
+}
+
+/* Stars */
+
+.starProps {
+    width: 2px;
+    height: 2px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index:-10;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    animation: linear infinite starAnim;
+  }
+  
+  @keyframes starAnim {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Mis specs display 1366 x 768 */
+  
+  /* StarFall */
+  
+  @keyframes starFall {
+    0% {
+      transform: translateX(-100);
+    }
+    100% {
+      transform: translateX(1000%) 
+    }
+  }
+  
+  .starFall__container {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    transform: rotate(45deg);
+    z-index: -10;
+  }
+  
+  .sfall {
+    position: absolute;
+    top: -100%;
+    left:-100%;
+    width: 400px;
+    background: linear-gradient(-45deg, var(--neon-lightblue), rgba(0, 0, 255, 0.1));
+    filter: drop-shadow(0 0 6px var(--neon-lightblue));
+  }
+  
+  .sfallAnim {
+    animation: starFall ease-in-out 3s;
+  }
+
+/* Not-found */
+
+.not__found{
+    background-color: var(--soft-black);
+    padding: 3rem;
+    border-radius: 1rem;
+    width: 90%;
+}
+
+.not__found-title{
+    font-size: 6rem;
+}
+
+.not__found-subtitle{
+    font-size: 2.5rem;
+}
+
+.not__found-home{
+    font-size: 2rem;
+    color:var(--neon-lightblue);
+}
+
+@media screen and (min-width:100px) and (max-width:500px) {
+    .not__found{
+        background-color: var(--soft-black);
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    
+    .not__found-title{
+        font-size: 3rem;
+    }
+    
+    .not__found-subtitle{
+        font-size: 2rem;
+    }
+    
+    .not__found-home{
+        font-size: 2rem;
+        color:var(--neon-lightblue);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .not__found{
+        background-color: var(--soft-black);
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    
+    .not__found-title{
+        font-size: 8rem;
+    }
+    
+    .not__found-subtitle{
+        font-size: 5rem;
+    }
+    
+    .not__found-home{
+        font-size: 5rem;
+        color:var(--neon-lightblue);
+    }
+}
