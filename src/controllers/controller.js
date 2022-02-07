@@ -38,7 +38,7 @@ const controller = {
     })
   },
   downloadCv: (req, res) => {
-    const file = path.resolve(__dirname, '../../public/other/Sergio-Gabriel-MaquedaCV-FullStackDevJr.pdf')
+    const file = path.resolve(__dirname, '../../public/other/CV-Sergio-Gabriel-Maqueda-FullStackDevJr.pdf')
 
     return res.download(file)
   },
