@@ -3,7 +3,7 @@ const d = document,
   ua = navigator.userAgent
 
 export default function Stars() {
-  let starsQuantityMin = 100,
+  let starsQuantityMin = 150,
     starsQuantityMid = 250,
     starsQuantityMax = 500,
     /* starsSizeMin = 1,

@@ -1,3 +1,5 @@
+import formModal from './formModal.js'
+import formSend from './formSend.js'
 import nav_bar from './nav_bar.js'
 import StarFall from './starfall.js'
 import Stars from './stars.js'
@@ -9,6 +11,8 @@ d.addEventListener('DOMContentLoaded', (e) => {
   nav_bar('.hamburger', 'header', '.header__container')
   Stars()
   StarFall('.starFall__container')
+  formSend('contactForm')
+  formModal('.formSend', '.formSend__close')
 })
 
 const $load = d.querySelector('.load'),

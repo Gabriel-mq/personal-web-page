@@ -25,7 +25,9 @@ const controller = {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: `Mensaje de ${formData.fullname}`,
-      text: `${formData.comments} \n ${formData.email} \n ${formData.fullname}`,
+      text: `${formData.comments}
+          \n ${formData.email}
+          \n ${formData.fullname}`,
     }
 
     sender.sendMail(emailOpts, (error, info) => {
@@ -33,12 +35,14 @@ const controller = {
         console.log(error)
       } else {
         console.log('Enviado correctamente')
-        return res.redirect('/')
       }
     })
   },
   downloadCv: (req, res) => {
-    const file = path.resolve(__dirname, '../../public/other/CV-Sergio-Gabriel-Maqueda-FullStackDevJr.pdf')
+    const file = path.resolve(
+      __dirname,
+      '../../public/other/CV-Sergio-Gabriel-Maqueda-FullStackDevJr.pdf',
+    )
 
     return res.download(file)
   },

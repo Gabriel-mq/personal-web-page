@@ -49,6 +49,60 @@ body{
     width: 15rem;
 }
 
+/* FormPostData */
+
+.formSend{
+    width: 100%;
+    height: 100%;
+    background-color: var(--intense-black);
+    position:fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formSend__container{
+    width: 50%;
+    height: 50%;
+    background-color: var(--soft-black);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formSend__close{
+    background-color: var(--intense-black);
+    color:var(--soft-white);
+    width: 40%;
+    height: 5rem;
+    font-size: 2rem;
+    align-self: center;
+    cursor: pointer;
+    display:block;
+    margin: 0 auto;
+    border:1px solid var(--soft-white);
+    transition: 0.3s color, border;
+}
+
+.formSend__close:hover{
+    color:var(--neon-lightblue);
+    border:1px solid var(--neon-lightblue);
+}
+
+.formSend__title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.formSend__info-title{
+    font-size: 2rem;
+}
+
+.formSend__info-fullname, .formSend__info-email{
+    color:var(--neon-lightblue);
+    font-size: 2rem;
+}
+
 /* Stars */
 
 .starProps {
@@ -416,6 +470,25 @@ body{
 /* Smarth Watchs */
 
 @media screen and (min-width:100px) and (max-width:300px){
+    /* FormPostData */
+
+    .formSend__container{
+        width: 90%;
+        height: 90%;
+        padding: 2rem;
+    }
+
+    .formSend__close{
+        width: 50%;
+        height: 5rem;
+        font-size: 2rem;
+        cursor: none;
+    }
+
+    .formSend__title{
+        font-size: 3rem;
+    }
+
     /* About */
     
     .about__info-img{
@@ -426,6 +499,40 @@ body{
 /* Móvil pequeños */
 
 @media screen and (max-width:400px){
+    /* FormPostData */
+    .formSend__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        padding: 2rem;
+    }
+
+    .formSend__container > *{
+        margin:1rem 0;
+    }
+
+    .formSend__close{
+        width: 50%;
+        height: 5rem;
+        font-size: 2rem;
+        cursor: none;
+    }
+
+    .formSend__title{
+        font-size: 3rem;
+    }
+
+    .formSend__info-title{
+        font-size: 2rem;
+    }
+
+    .formSend__info-fullname, .formSend__info-email{
+        font-size: 2rem;
+    }
+
     /* Header */
 
     #header{
@@ -552,6 +659,40 @@ body{
 /* Móvil grande */
 
 @media screen and (min-width:401px) and (max-width:550px){
+    /* FormPostData */
+    .formSend__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        padding: 2rem;
+    }
+
+    .formSend__container > *{
+        margin:1rem 0;
+    }
+
+    .formSend__close{
+        width: 60%;
+        height: 7rem;
+        font-size: 3rem;
+        cursor: none;
+    }
+
+    .formSend__title{
+        font-size: 4rem;
+    }
+
+    .formSend__info-title{
+        font-size: 3rem;
+    }
+
+    .formSend__info-fullname, .formSend__info-email{
+        font-size: 3rem;
+    }
+
     /* Main */
 
     .hero__titles-container{
@@ -653,6 +794,40 @@ body{
 /* Tablets y netbooks */
 
 @media screen and (min-width:551px) and (max-width:1025px){
+    /* FormPostData */
+    .formSend__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        padding: 2rem;
+    }
+
+    .formSend__container > *{
+        margin:1rem 0;
+    }
+
+    .formSend__close{
+        width: 50%;
+        height: 8rem;
+        font-size: 4rem;
+        cursor: none;
+    }
+
+    .formSend__title{
+        font-size: 5rem;
+    }
+
+    .formSend__info-title{
+        font-size: 4rem;
+    }
+
+    .formSend__info-fullname, .formSend__info-email{
+        font-size: 4rem;
+    }
+
     /* Header */
 
     #header{
@@ -776,6 +951,40 @@ body{
 /* Semi y Full HD (1080 Height) */
 
 @media screen and (min-width:1440px) and (max-width:1920px){
+        /* FormPostData */
+    .formSend__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 55%;
+        padding: 2rem;
+    }
+
+    .formSend__container > *{
+        margin:1rem 0;
+    }
+
+    .formSend__close{
+        width: 40%;
+        height: 8rem;
+        font-size: 4rem;
+        cursor: pointer;
+        margin:0 auto;
+    }
+
+    .formSend__title{
+        font-size: 5rem;
+    }
+
+    .formSend__info-title{
+        font-size: 3.5rem;
+    }
+
+    .formSend__info-fullname, .formSend__info-email{
+        font-size: 3.5rem;
+    }
+
     /*Header*/
     .header__nav-button{
         margin-right: 2rem;
@@ -876,6 +1085,40 @@ body{
 /* QuadHD Screen */
 
 @media screen and (min-width:2560px){
+    /* FormPostData */
+    .formSend__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 70%;
+        padding:4rem;
+    }
+
+    .formSend__container > *{
+        margin:1rem 0;
+    }
+
+    .formSend__close{
+        width: 35%;
+        height: 11rem;
+        font-size: 6rem;
+        cursor: none;
+        margin:0 auto;
+    }
+
+    .formSend__title{
+        font-size: 8rem;
+    }
+
+    .formSend__info-title{
+        font-size: 6rem;
+    }
+
+    .formSend__info-fullname, .formSend__info-email{
+        font-size: 6rem;
+    }
+
     /*Header*/
     .header__nav-button{
         margin-right: 2rem;
