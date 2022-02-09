@@ -57,12 +57,16 @@ body{
     background-color: var(--intense-black);
     position:fixed;
     z-index: 20;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .formSend__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 50%;
     background-color: var(--soft-black);
@@ -301,7 +305,7 @@ body{
 }
 
 .about__info-lines{
-    color:var(--neon-lightblue);
+    color:var(--sun-yellow);
 }
 
 .about__info-text{
@@ -317,6 +321,10 @@ body{
 }
 
 /*Projects*/
+
+#projects{
+    height: 100%;
+}
 
 .projects__title{
     align-self: flex-start;
@@ -337,10 +345,11 @@ body{
 
 .projects__project{
     width: 30%;
-    height: 45%;
+    height: 100%;
     padding:1rem;
     background-color: var(--intense-black);
     border-radius: 1rem;
+    margin:1rem;
 }
 
 .projects__project:hover .fa-folder{
@@ -372,6 +381,21 @@ body{
 
 .projects__project-info{
     font-size: 1.4rem;
+}
+
+.project__info-lines{
+    color:var(--sun-yellow);
+}
+
+.projects__project-icons-used{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.projects__project-icons-used *{
+    margin-top:2rem;
+    width: 3.5rem;
 }
 
 /*Footer*/
@@ -501,10 +525,6 @@ body{
 @media screen and (max-width:400px){
     /* FormPostData */
     .formSend__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 90%;
         height: 90%;
         padding: 2rem;
@@ -639,6 +659,11 @@ body{
         font-weight: 100;
     }
 
+    .projects__project-icons-used *{
+        margin-top:2rem;
+        width: 2.5rem;
+    }
+
     /*Footer*/
 
     #contact{
@@ -661,10 +686,6 @@ body{
 @media screen and (min-width:401px) and (max-width:550px){
     /* FormPostData */
     .formSend__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 90%;
         height: 90%;
         padding: 2rem;
@@ -796,10 +817,6 @@ body{
 @media screen and (min-width:551px) and (max-width:1025px){
     /* FormPostData */
     .formSend__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 90%;
         height: 90%;
         padding: 2rem;
@@ -953,9 +970,6 @@ body{
 @media screen and (min-width:1440px) and (max-width:1920px){
         /* FormPostData */
     .formSend__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         width: 70%;
         height: 55%;
         padding: 2rem;
@@ -1024,6 +1038,10 @@ body{
 
     /*About*/
 
+    #about{
+        height: 100%;
+    }
+
     .about__title{
         font-size: 7rem;
     }
@@ -1038,14 +1056,18 @@ body{
 
     /*Projects*/
 
+    #projects{
+        height: 100%;
+    }
+
     .projects__title{
         font-size:7rem;
     }
 
     .projects__project{
         width: 30%;
-        height: 45%;
-        padding:1rem;
+        height: 100%;
+        padding:1.5rem;
     }
 
     .projects__project-icons-container i{
@@ -1061,7 +1083,12 @@ body{
     }
 
     .projects__project-info{
-        font-size:2rem;
+        font-size:2.5rem;
+    }
+
+    .projects__project-icons-used *{
+        margin-top:5rem;
+        width: 5rem;
     }
 
     /*Footer*/
@@ -1200,6 +1227,11 @@ body{
 
     .projects__project-info{
         font-size:4rem;
+    }
+
+    .projects__project-icons-used *{
+        margin-top:5rem;
+        width: 9rem;
     }
 
     /*Footer*/

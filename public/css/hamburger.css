@@ -105,6 +105,8 @@
   }
 }
 
+/* FullHD */
+
 @media screen and (min-width:1440px) and (max-width:1920px) {
   .hamburger-box {
     width: 47px;
@@ -130,6 +132,8 @@
     bottom: -16px;
   }
 }
+
+/* Quad */
 
 @media screen and (min-width:2560px) {
   .hamburger-box {
