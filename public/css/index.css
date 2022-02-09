@@ -57,7 +57,7 @@ body{
     background-color: var(--intense-black);
     position:fixed;
     z-index: 20;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
