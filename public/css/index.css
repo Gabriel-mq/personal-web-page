@@ -477,6 +477,12 @@ body{
         cursor:none;
     }
 
+    /* Projects */
+
+    .projects__project-icons-external i{
+        cursor:none;
+    }
+
     /* Footer */
 
     .footer__container form button{
