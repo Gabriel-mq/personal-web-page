@@ -74,7 +74,7 @@
 
 /* Móvil pequeños */
 
-@media screen and (min-width:100px) and (max-width:400px) {
+@media screen and (min-width:282px) and (max-width:400px) {
   .hamburger {
     cursor: none;
   }
