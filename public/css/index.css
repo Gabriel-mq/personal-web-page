@@ -172,9 +172,9 @@ body{
 
 .header__container{
     position: fixed;
-    display: flex;
+    display: inline-flex;
     justify-content: right;
-    width: 100%;
+    right:1vw;
     margin: 1rem 0;
     background: transparent;
     z-index: 10;
