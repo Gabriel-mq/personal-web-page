@@ -353,7 +353,7 @@ body{
 }
 
 .projects__project:hover .fa-folder{
-    color:var(--sun-yellow);
+    color:var(--neon-lightblue);
 }
 
 .projects__project:hover .projects__project-icons-used{
