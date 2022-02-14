@@ -41,7 +41,7 @@ const controller = {
   downloadCv: (req, res) => {
     const file = path.resolve(
       __dirname,
-      '../../public/other/CV-Sergio-Gabriel-Maqueda-FullStackDevJr.pdf',
+      '../../public/other/CV-Sergio-Gabriel-Maqueda-FullStackDev.pdf',
     )
 
     return res.download(file)
