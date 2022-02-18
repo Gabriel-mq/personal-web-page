@@ -318,6 +318,7 @@ body{
 .about__info-img{
     width: 42rem;
     border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px var(--intense-black);
 }
 
 /*Projects*/
@@ -350,6 +351,12 @@ body{
     background-color: var(--intense-black);
     border-radius: 1rem;
     margin:1rem;
+    box-shadow: 0 0 4px var(--soft-black);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.projects__project:hover{
+    box-shadow: 0 0 4px var(--neon-lightblue);
 }
 
 .projects__project:hover .fa-folder{
@@ -375,7 +382,8 @@ body{
 }
 
 .projects__project-icons-external i:hover{
-    color:var(--neon-lightblue)
+    color:var(--sun-yellow);
+    filter:drop-shadow(0 0 0.2px var(--sun-yellow));
 }
 
 .projects__project-title{
@@ -454,6 +462,10 @@ body{
     color:var(--black-space);
 }
 
+#contactForm *:not(label,button){ 
+    margin-top:0.5rem;
+}
+
 .footer__container form button{
     color:var(--soft-white);
     width: 40%;
@@ -512,6 +524,12 @@ body{
 /* Smarth Watchs */
 
 @media screen and (min-width:100px) and (max-width:300px){
+    /* Header */
+
+    .header__container{
+        display: none;
+    }
+    
     /* FormPostData */
 
     .formSend__container{
