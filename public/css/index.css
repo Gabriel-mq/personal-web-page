@@ -285,6 +285,11 @@ body{
 .hero__icons-container *{
     width: 7rem;
     margin: 0 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.hero__icons-container *:hover {
+    transform: scale(1.3);
 }
 
 /*About*/
